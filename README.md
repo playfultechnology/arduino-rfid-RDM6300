@@ -1,5 +1,6 @@
 # arduino-rfid-RDM6300
 Code, wiring diagrams, and documentation describing how to interface an Arduino with RDM6300 module to read 125kHz EM4100 tags. When a card with the correct tag ID is read, as defined in the code, a relay is activated which can, for example, unlock a maglock.
+![RDM6300 module](https://github.com/playfultechnology/arduino-rfid-RDM6300/raw/master/documentation/RDM6300.jpg)
 
 The reader communicates via serial interface - since Arduino UNO/Nano only have a single hardware serial port (and that is already being used by the USB connection), the [AltSoftSerial](https://github.com/PaulStoffregen/AltSoftSerial) library is used to create a software serial connection on Pin 8. The RDM6300 transmits the data of any tags read via its TX pin to the Arduino on this single pin (there is no need to connect the RX pin, since no commands nor data need to be sent *to* the reader). 
 
