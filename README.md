@@ -6,5 +6,9 @@ The reader communicates via serial interface - since Arduino UNO/Nano only have 
 
 The RDM6300 is a very cheap reader, and very easy to use, but it has only a limited read range of a few cm and there is no easy, reliable way to connect multiple readers to the same Arduino. Furthermore, there is no way to detect when a tag has been *removed* from the reader. For a comparison of alternative readers, see https://www.patreon.com/posts/rfid-roundup-23115452
 
+# Components
+- [RDM6300 Module](https://www.aliexpress.com/item/1PCS-125Khz-RFID-Reader-Module-RDM6300-UART-Output-Access-Control-System-forarduino-Best-prices/32789867826.html) ~£1.50
+- [Arduino](https://www.banggood.com/ATmega328P-Nano-V3-Controller-Board-Compatible-Arduino-p-940937.html) ~£3
+
 # Wiring
 ![RDM6300 to Arduino using Serial interface](https://raw.githubusercontent.com/playfultechnology/arduino-rfid-RDM6300/864722c7aec461057b4b85dabd1add70258897b7/wiring/RDM6300_bb.jpg)
